@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  overflow: auto;
+  margin-bottom: 5rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  background: #000;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li,
+nav a {
+  padding: 14px;
+}
+
+nav a:hover,
+nav a.active,
+nav a:focus {
+  background-color: #0e6cff;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+  outline: none;
+}
+
+.content p {
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+.content .form-section input {
+  padding: 10px 5px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  width: 40%;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 14px;
+}
+
+.btn {
+  background-color: #0e6cff;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #004bc1;
+  transition: background 0.3s ease-in-out;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .form-section input {
+    width: 100%;
+  }
+  .form-section .btn {
+    border-radius: 2px;
+    padding: 6px;
+  }
+}

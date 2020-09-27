@@ -1,0 +1,17 @@
+%buttons {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 14px;
+}
+
+.btn {
+  @extend %buttons;
+  background-color: $secondary-color;
+
+  &:hover,
+  &:focus {
+    background-color: darken($secondary-color, 15%);
+    transition: background 0.3s ease-in-out;
+    outline: none;
+  }
+}
